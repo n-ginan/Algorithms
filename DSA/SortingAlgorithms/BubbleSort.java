@@ -1,31 +1,32 @@
-package DSA.ArrayAlgorithms;
+package DSA.SortingAlgorithms;
 
 public class BubbleSort {
     public static void main(String[] args) throws Exception {
 
-        int[] bubbleSort = {31, 12, 25, 8};
+        int[] bubbleSort = {31, 12, 25, 8, 45};
         System.out.print("Unsorted Array: ");
+        int secondHolder;
+
         for (int numbers : bubbleSort) {
             System.out.print(numbers + " ");
         }
         System.out.println("");
 
-        //-----ARRAY-BUBBLE-SORT-----//
-
-        int secondHolder;
-        for (int i = 0; i < bubbleSort.length - 1; i++) { //i = 2
-            for (int j = 0; j < bubbleSort.length - 1; j++) { //j=2
-                if (bubbleSort[j] > bubbleSort[j + 1]) { //25 > 31
-                    secondHolder = bubbleSort[j];       // 12
-                    bubbleSort[j] = bubbleSort[j + 1]; //  b[0] == 8
-                    bubbleSort[j + 1] = secondHolder; //  b[1] == 12
+        for (int i = 0; i < bubbleSort.length - 1; i++) { 
+            for (int j = 0; j < bubbleSort.length - 1; j++) { 
+                if (bubbleSort[j] > bubbleSort[j + 1]) { 
+                    secondHolder = bubbleSort[j];       
+                    bubbleSort[j] = bubbleSort[j + 1]; 
+                    bubbleSort[j + 1] = secondHolder; 
                     
                     System.out.print("Bubble Sort: ");
+
                     for (int numbers : bubbleSort) {
                         System.out.print(numbers + " ");
                     }
+                    
                     System.out.println("");
-                } // {8, 12, 25, 31}
+                } 
             }
         }
 
@@ -34,6 +35,6 @@ public class BubbleSort {
             System.out.print(numbers + " ");
         }
         System.out.println("");
-        //-----ARRAY-BUBBLE-SORT-----//
+       
     }
 }
