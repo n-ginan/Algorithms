@@ -7,7 +7,7 @@ import java.util.List;
 public class SelectionSort {
     public static void main(String[] args){ 
     List<Integer> selection = new ArrayList<>();
-    Collections.addAll(selection, 38, 30, 6, 12, 33);
+    Collections.addAll(selection, 38, 30, 6, 12, 33, 50, 1, 3);
     int minValue;
     
     System.out.print("Unsorted: ");
