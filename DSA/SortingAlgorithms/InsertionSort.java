@@ -43,7 +43,3 @@ public class InsertionSort {
         }
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> e29c55e ("rah")
