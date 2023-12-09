@@ -1,14 +1,28 @@
 package DSA.SortingAlgorithms;
 
+import java.util.Scanner;
+
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] unsorted = {50, 34, 5, 1, 7};
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter array size: ");
+        int[] unsorted = new int[sc.nextInt()];
         int lesser;
-        System.out.print("Unsorted: ");
-        for (int numbers : unsorted) {
-            System.out.print(numbers + " ");
+        System.out.println("Unsorted elements: ");
+        for (int s = 0; s < unsorted.length; s++) {
+            unsorted[s] = sc.nextInt();
         }
+
+        sc.close();
+
+        System.out.print("The elements are: ");
+
+        for (int i : unsorted) {
+            System.out.print(i + " ");
+        }
+
         System.out.println("");
+
         for (int i = 0; i < unsorted.length ; i++) {
             for (int j = 0; j < unsorted.length - 1; j++) { 
                 if (unsorted[j] > unsorted[j + 1]) { 
